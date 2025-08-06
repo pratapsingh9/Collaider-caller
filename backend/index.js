@@ -17,6 +17,7 @@ const wss = new WebSocketServer({ server });
 
 const rooms = new Map();
 
+console.log('wokring')
 
 const broadcastToRoom = (roomId, message, excludeId) => {
     const room = rooms.get(roomId);
